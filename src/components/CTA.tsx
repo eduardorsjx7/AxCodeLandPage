@@ -8,7 +8,7 @@ export function CTA() {
   return (
     <section className="relative py-20 sm:py-24">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_50%,rgba(0,255,127,0.12),transparent)]" />
-      <div className="relative mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
+      <div className="relative mx-auto max-w-4xl px-6 text-center sm:px-8 lg:px-10">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}

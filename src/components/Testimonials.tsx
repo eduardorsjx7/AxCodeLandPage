@@ -57,7 +57,7 @@ export function Testimonials() {
       className="relative border-t border-white/5 bg-surface/30 py-20 sm:py-24"
     >
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_70%_30%,rgba(0,255,127,0.05),transparent_50%)]" />
-      <div className="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+      <div className="relative mx-auto max-w-4xl px-6 sm:px-8 lg:px-10">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}

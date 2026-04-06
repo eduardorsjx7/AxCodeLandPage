@@ -13,7 +13,7 @@ export function HeroStats() {
   return (
     <section className="relative bg-[#070707] py-8 sm:py-10">
       <motion.div
-        className="relative mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8"
+        className="relative mx-auto w-full max-w-6xl px-6 sm:px-8 lg:px-10"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true, margin: "-80px" }}
@@ -23,6 +23,7 @@ export function HeroStats() {
           {stats.map((s, i) => (
             <motion.div
               key={s.l}
+              className="px-1 sm:px-2"
               initial={{ opacity: 0, y: 14 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

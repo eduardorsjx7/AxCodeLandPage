@@ -99,7 +99,10 @@ export function Navbar() {
                 className="inline-flex"
                 onClick={() => setOpen(false)}
               >
-                <BrandLogo />
+                <BrandLogo
+                  className="h-8 w-auto max-w-[160px] sm:h-9 sm:max-w-[180px]"
+                  sizes="(max-width: 640px) 160px, 180px"
+                />
               </a>
             </div>
             <ul className="flex flex-col gap-1 px-4 py-4">
