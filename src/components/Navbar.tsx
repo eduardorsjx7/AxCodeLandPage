@@ -93,18 +93,6 @@ export function Navbar() {
             transition={{ duration: 0.28 }}
             className="border-t border-white/5 bg-background/95 backdrop-blur-xl lg:hidden"
           >
-            <div className="border-b border-white/5 px-4 py-4">
-              <a
-                href="#inicio"
-                className="inline-flex"
-                onClick={() => setOpen(false)}
-              >
-                <BrandLogo
-                  className="h-8 w-auto max-w-[160px] sm:h-9 sm:max-w-[180px]"
-                  sizes="(max-width: 640px) 160px, 180px"
-                />
-              </a>
-            </div>
             <ul className="flex flex-col gap-1 px-4 py-4">
               {links.map((l, i) => (
                 <motion.li

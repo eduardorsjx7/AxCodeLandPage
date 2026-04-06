@@ -37,7 +37,7 @@ export function BrandLogo({
       alt="AxCode — Software house"
       width={BRAND_LOGO.width}
       height={BRAND_LOGO.height}
-      className={`h-auto max-h-full w-auto shrink-0 object-contain object-center ${logoShadow} ${className}`}
+      className={`w-auto shrink-0 object-contain object-center ${logoShadow} ${className}`}
       priority={priority}
       sizes={sizes}
     />

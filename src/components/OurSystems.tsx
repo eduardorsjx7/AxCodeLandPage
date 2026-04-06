@@ -46,7 +46,7 @@ function SystemCard({ item, index }: { item: OurSystem; index: number }) {
         {item.name}
       </h3>
       <p className="mt-1 text-sm font-medium text-accent-blue/90">{item.tagline}</p>
-      <p className="mt-3 text-justify text-sm leading-relaxed text-zinc-400">
+      <p className="mt-3 w-full text-justify text-sm leading-relaxed text-zinc-400">
         {item.description}
       </p>
 
@@ -76,7 +76,7 @@ function NewSystemsCard({ index }: { index: number }) {
         <Rocket className="h-6 w-6" strokeWidth={1.5} />
       </div>
       <p className="font-mono text-sm font-semibold text-zinc-300">Novos sistemas</p>
-      <p className="mt-2 max-w-xs text-sm text-zinc-500">
+      <p className="mt-2 max-w-xs text-justify text-sm text-zinc-500">
         Estamos expandindo o portfólio. Entre em contato se quiser parceria ou
         white-label.
       </p>

@@ -89,7 +89,7 @@ function ProductCard({
         onMouseMove={handleMove}
         onMouseLeave={handleLeave}
         style={{ rotateX: rx, rotateY: ry, transformStyle: "preserve-3d" }}
-        className="relative h-full overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] p-8 backdrop-blur-xl transition-shadow duration-300 hover:border-accent-green/35 hover:shadow-glow"
+        className="relative flex h-full flex-col items-center overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] p-8 text-center backdrop-blur-xl transition-shadow duration-300 hover:border-accent-green/35 hover:shadow-glow"
         whileHover={{ scale: 1.02 }}
         transition={{ type: "spring", stiffness: 400, damping: 25 }}
       >
@@ -113,7 +113,7 @@ function ProductCard({
           {name}
         </h3>
         <p
-          className="relative mt-3 text-sm leading-relaxed text-zinc-400"
+          className="relative mt-3 w-full text-justify text-sm leading-relaxed text-zinc-400"
           style={{ transform: "translateZ(20px)" }}
         >
           {desc}

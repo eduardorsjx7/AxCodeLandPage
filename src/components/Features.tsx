@@ -75,7 +75,7 @@ export function Features() {
                 <f.icon className="h-7 w-7" strokeWidth={1.5} />
               </motion.div>
               <h3 className="text-lg font-semibold text-white">{f.title}</h3>
-              <p className="mt-2 text-sm text-zinc-400">{f.desc}</p>
+              <p className="mt-2 w-full text-justify text-sm text-zinc-400">{f.desc}</p>
             </motion.div>
           ))}
         </div>

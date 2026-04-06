@@ -82,13 +82,13 @@ export function About() {
             <motion.li
               key={title}
               variants={item}
-              className="group rounded-2xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur-md transition hover:border-accent-green/30 hover:shadow-glow-sm"
+              className="group rounded-2xl border border-white/10 bg-white/[0.03] p-6 text-center backdrop-blur-md transition hover:border-accent-green/30 hover:shadow-glow-sm"
             >
-              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-accent-green/20 to-accent-blue/10 text-accent-green transition group-hover:scale-105 group-hover:text-accent-green">
+              <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-accent-green/20 to-accent-blue/10 text-accent-green transition group-hover:scale-105 group-hover:text-accent-green">
                 <Icon className="h-6 w-6" strokeWidth={1.5} />
               </div>
               <h3 className="text-lg font-semibold text-white">{title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-zinc-400">{desc}</p>
+              <p className="mt-2 w-full text-justify text-sm leading-relaxed text-zinc-400">{desc}</p>
             </motion.li>
           ))}
         </motion.ul>

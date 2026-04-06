@@ -18,7 +18,7 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-6 sm:px-8 lg:px-10">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
           <div className="text-center md:text-left">
-            <BrandLogo className="mx-auto h-8 w-auto max-w-[160px] md:mx-0 sm:h-10 sm:max-w-[200px] lg:h-11 lg:max-w-[240px]" />
+            <BrandLogo className="mx-auto h-12 w-auto max-w-[220px] md:mx-0 sm:h-12 sm:max-w-[250px] lg:h-14 lg:max-w-[300px]" />
             <p className="mx-auto mt-4 max-w-sm text-center text-sm text-zinc-500 md:mx-0 md:text-left">
               Software house especializada em produtos digitais de alto
               desempenho. Aracaju-SE — atendimento remoto para todo o Brasil.

@@ -157,8 +157,8 @@ export function Hero() {
               />
               <BrandLogo
                 priority
-                className="mx-auto h-28 w-auto max-w-[min(92vw,620px)] sm:h-36 sm:max-w-[min(92vw,700px)] lg:h-44 lg:max-w-[min(88vw,760px)] xl:h-52"
-                sizes="(max-width: 640px) 620px, (max-width: 1024px) 700px, 760px"
+                className="mx-auto h-32 w-auto max-w-[min(94vw,680px)] sm:h-40 sm:max-w-[min(94vw,760px)] lg:h-48 lg:max-w-[min(90vw,820px)] xl:h-56"
+                sizes="(max-width: 640px) 680px, (max-width: 1024px) 760px, 820px"
               />
             </div>
           </motion.div>
