@@ -1,0 +1,15 @@
+"use client";
+
+import dynamic from "next/dynamic";
+
+const CustomCursor = dynamic(
+  () =>
+    import("./CustomCursor").then((mod) => ({
+      default: mod.CustomCursor,
+    })),
+  { ssr: false }
+);
+
+export function ClientEffects() {
+  return <CustomCursor />;
+}

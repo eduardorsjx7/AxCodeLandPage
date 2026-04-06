@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0d0d0d;
+  --accent-green: #00ff7f;
+  --accent-blue: #007bff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-background text-zinc-100 antialiased;
+}
+
+@media (min-width: 768px) {
+  body {
+    cursor: none;
+  }
+}
+
+::selection {
+  background: rgba(0, 255, 127, 0.25);
+  color: #fff;
+}
+
+@media (pointer: coarse) {
+  .custom-cursor-root {
+    display: none;
+  }
+}
