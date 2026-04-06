@@ -18,10 +18,10 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
           <div>
-            <BrandLogo />
-            <p className="mt-4 max-w-sm text-sm text-zinc-500">
+            <BrandLogo className="mx-auto h-10 w-auto max-w-[200px] sm:h-11 sm:max-w-[240px]" />
+            <p className="mx-auto mt-4 max-w-sm text-center text-sm text-zinc-500">
               Software house especializada em produtos digitais de alto
-              desempenho. São Paulo — atendimento remoto para todo o Brasil.
+              desempenho. Aracaju-SE — atendimento remoto para todo o Brasil.
             </p>
           </div>
           <div>
@@ -32,10 +32,10 @@ export function Footer() {
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-accent-blue" />
                 <a
-                  href="mailto:contato@axcode.dev"
+                  href="mailto:axcodesuport@gmail.com"
                   className="transition hover:text-accent-green"
                 >
-                  contato@axcode.dev
+                  axcodesuport@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-2">
@@ -66,12 +66,9 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-center text-xs text-zinc-600 sm:flex-row sm:text-left">
+        <div className="mt-14 border-t border-white/10 pt-8 text-center text-xs text-zinc-600">
           <p>
             © {new Date().getFullYear()} AxCode. Todos os direitos reservados.
-          </p>
-          <p className="font-mono text-zinc-500">
-            Feito com precisão e café ☕
           </p>
         </div>
       </div>
