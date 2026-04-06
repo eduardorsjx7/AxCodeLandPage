@@ -10,10 +10,16 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
   @apply bg-background text-zinc-100 antialiased;
+  overflow-x: clip;
+}
+
+main {
+  overflow-x: clip;
 }
 
 @media (min-width: 768px) {

@@ -131,7 +131,7 @@ export function Products() {
     <section
       id="produtos"
       ref={sectionRef}
-      className="relative py-24"
+      className="relative py-20 sm:py-24"
     >
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_50%_at_50%_100%,rgba(0,255,127,0.06),transparent)]" />
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
@@ -144,7 +144,7 @@ export function Products() {
           <p className="font-mono text-sm uppercase tracking-widest text-accent-green">
             O que entregamos
           </p>
-          <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+          <h2 className="mt-3 text-2xl font-semibold tracking-tight text-white sm:text-4xl">
             Produtos digitais com aparência de marca global
           </h2>
           <p className="mt-4 text-zinc-400">

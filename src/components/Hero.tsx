@@ -54,10 +54,10 @@ export function Hero() {
       </motion.div>
       <div className="absolute inset-0 bg-grid-pattern bg-grid bg-[length:64px_64px] opacity-[0.35]" />
 
-      <div className="relative mx-auto grid max-w-6xl grid-cols-1 items-center gap-10 px-4 pb-20 pt-12 sm:px-6 lg:grid-cols-[1fr_minmax(0,0.85fr)] lg:gap-12 lg:px-8 lg:pt-20">
+      <div className="relative mx-auto grid max-w-6xl grid-cols-1 items-center gap-10 px-4 pb-20 pt-12 sm:px-6 xl:grid-cols-[1fr_minmax(0,0.85fr)] xl:gap-12 lg:px-8 lg:pt-20">
         <div className="flex min-w-0 flex-col justify-center">
         <motion.h1
-          className="max-w-4xl text-4xl font-semibold leading-[1.1] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl"
+          className="max-w-4xl text-4xl font-semibold leading-[1.1] tracking-tight text-white sm:text-5xl md:text-6xl 2xl:text-7xl"
           initial={{ opacity: 0, y: 32 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.75, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
@@ -68,7 +68,7 @@ export function Hero() {
         </motion.h1>
 
         <motion.p
-          className="mt-6 max-w-2xl text-lg text-zinc-400 sm:text-xl"
+          className="mt-6 max-w-2xl text-base text-zinc-400 sm:text-lg lg:text-xl"
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.18 }}
@@ -86,7 +86,7 @@ export function Hero() {
         >
           <motion.a
             href="#contato"
-            className="group inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-accent-green to-emerald-400 px-8 py-4 text-base font-semibold text-black shadow-glow"
+            className="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-accent-green to-emerald-400 px-8 py-4 text-base font-semibold text-black shadow-glow sm:w-auto"
             whileHover={{ scale: 1.03, boxShadow: "0 0 48px rgba(0,255,127,0.35)" }}
             whileTap={{ scale: 0.98 }}
           >
@@ -95,7 +95,7 @@ export function Hero() {
           </motion.a>
           <motion.a
             href="#produtos"
-            className="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-8 py-4 text-base font-semibold text-white backdrop-blur-md transition hover:border-accent-blue/40 hover:bg-accent-blue/10 hover:text-white"
+            className="inline-flex w-full items-center justify-center rounded-full border border-white/15 bg-white/5 px-8 py-4 text-base font-semibold text-white backdrop-blur-md transition hover:border-accent-blue/40 hover:bg-accent-blue/10 hover:text-white sm:w-auto"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
           >
@@ -106,13 +106,13 @@ export function Hero() {
         </div>
 
         <motion.div
-          className="relative mx-auto flex w-full max-w-[820px] justify-center [perspective:1800px] lg:col-start-2 lg:row-start-1 lg:mx-0 lg:w-full lg:max-w-none lg:self-center lg:justify-center"
+          className="relative mx-auto flex w-full max-w-[760px] justify-center [perspective:1800px] xl:col-start-2 xl:row-start-1 xl:mx-0 xl:w-full xl:max-w-none xl:self-center xl:justify-center"
           initial={{ opacity: 0, scale: 0.88, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 0.85, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
         >
           <div
-            className="absolute left-1/2 top-1/2 h-[500px] w-[760px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent-green/16 blur-[120px]"
+            className="absolute left-1/2 top-1/2 h-[clamp(260px,52vw,500px)] w-[clamp(340px,72vw,760px)] -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent-green/16 blur-[120px]"
             aria-hidden
           />
           <motion.div
@@ -121,7 +121,7 @@ export function Hero() {
             animate={{ y: [0, -7, 0] }}
             transition={{ duration: 6.8, repeat: Infinity, ease: "easeInOut" }}
             style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
-            className="relative z-[1] flex aspect-[16/10] w-full max-w-[760px] items-center justify-center"
+            className="relative z-[1] flex aspect-[16/10] w-full max-w-[min(100%,760px)] items-center justify-center"
           >
             <div
               className="absolute left-1/2 top-[78%] h-20 w-[64%] -translate-x-1/2 rounded-full bg-black/45 blur-2xl"
@@ -129,21 +129,21 @@ export function Hero() {
               aria-hidden
             />
             <motion.div
-              className="absolute h-[500px] w-[620px] rounded-full border border-accent-blue/30"
+              className="absolute h-[clamp(220px,48vw,500px)] w-[clamp(280px,62vw,620px)] rounded-full border border-accent-blue/30"
               style={{ transform: "translateZ(-14px) rotateX(70deg)" }}
               animate={{ rotateZ: [0, 360] }}
               transition={{ duration: 24, repeat: Infinity, ease: "linear" }}
               aria-hidden
             />
             <motion.div
-              className="absolute h-[430px] w-[540px] rounded-full border border-accent-green/35"
+              className="absolute h-[clamp(200px,42vw,430px)] w-[clamp(250px,54vw,540px)] rounded-full border border-accent-green/35"
               style={{ transform: "translateZ(4px) rotateX(68deg) rotateY(14deg)" }}
               animate={{ rotateZ: [360, 0] }}
               transition={{ duration: 18, repeat: Infinity, ease: "linear" }}
               aria-hidden
             />
             <div
-              className="pointer-events-none absolute h-[360px] w-[460px] rounded-full bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.14),rgba(255,255,255,0.04)_46%,transparent_74%)]"
+              className="pointer-events-none absolute h-[clamp(180px,36vw,360px)] w-[clamp(220px,46vw,460px)] rounded-full bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.14),rgba(255,255,255,0.04)_46%,transparent_74%)]"
               style={{ transform: "translateZ(-10px)" }}
               aria-hidden
             />
@@ -157,7 +157,7 @@ export function Hero() {
               />
               <BrandLogo
                 priority
-                className="mx-auto h-36 w-auto max-w-[620px] sm:h-44 sm:max-w-[700px] lg:h-52 lg:max-w-[760px]"
+                className="mx-auto h-28 w-auto max-w-[min(92vw,620px)] sm:h-36 sm:max-w-[min(92vw,700px)] lg:h-44 lg:max-w-[min(88vw,760px)] xl:h-52"
                 sizes="(max-width: 640px) 620px, (max-width: 1024px) 700px, 760px"
               />
             </div>

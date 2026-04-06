@@ -13,13 +13,13 @@ export function Footer() {
   return (
     <footer
       id="contato"
-      className="border-t border-white/10 bg-black py-16"
+      className="border-t border-white/10 bg-black py-14 sm:py-16"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
-          <div>
-            <BrandLogo className="mx-auto h-10 w-auto max-w-[200px] sm:h-11 sm:max-w-[240px]" />
-            <p className="mx-auto mt-4 max-w-sm text-center text-sm text-zinc-500">
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+          <div className="text-center md:text-left">
+            <BrandLogo className="mx-auto h-10 w-auto max-w-[200px] md:mx-0 sm:h-11 sm:max-w-[240px]" />
+            <p className="mx-auto mt-4 max-w-sm text-center text-sm text-zinc-500 md:mx-0 md:text-left">
               Software house especializada em produtos digitais de alto
               desempenho. Aracaju-SE — atendimento remoto para todo o Brasil.
             </p>
@@ -33,7 +33,7 @@ export function Footer() {
                 <Mail className="h-4 w-4 text-accent-blue" />
                 <a
                   href="mailto:axcodesuport@gmail.com"
-                  className="transition hover:text-accent-green"
+                  className="break-all transition hover:text-accent-green"
                 >
                   axcodesuport@gmail.com
                 </a>

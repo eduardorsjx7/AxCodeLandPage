@@ -6,7 +6,7 @@ import { BrandLogo } from "./BrandLogo";
 
 export function CTA() {
   return (
-    <section className="relative py-24">
+    <section className="relative py-20 sm:py-24">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_50%,rgba(0,255,127,0.12),transparent)]" />
       <div className="relative mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
         <motion.div
@@ -14,12 +14,12 @@ export function CTA() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.55 }}
-          className="rounded-3xl border border-accent-green/25 bg-gradient-to-br from-white/[0.07] via-transparent to-accent-blue/10 p-10 shadow-glow backdrop-blur-xl sm:p-14"
+          className="rounded-3xl border border-accent-green/25 bg-gradient-to-br from-white/[0.07] via-transparent to-accent-blue/10 p-8 shadow-glow backdrop-blur-xl sm:p-12 lg:p-14"
         >
           <div className="mb-8 flex justify-center">
             <BrandLogo />
           </div>
-          <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl md:text-5xl">
+          <h2 className="text-2xl font-semibold tracking-tight text-white sm:text-4xl md:text-5xl">
             Pronto para levar seu projeto para o{" "}
             <span className="bg-gradient-to-r from-accent-green to-emerald-300 bg-clip-text text-transparent">
               próximo nível
@@ -32,7 +32,7 @@ export function CTA() {
           </p>
           <motion.a
             href="#contato"
-            className="mt-10 inline-flex items-center gap-2 rounded-full bg-accent-green px-10 py-5 text-lg font-semibold text-black shadow-[0_0_60px_rgba(0,255,127,0.4)]"
+            className="mt-10 inline-flex w-full items-center justify-center gap-2 rounded-full bg-accent-green px-8 py-4 text-base font-semibold text-black shadow-[0_0_60px_rgba(0,255,127,0.4)] sm:w-auto sm:px-10 sm:py-5 sm:text-lg"
             whileHover={{
               scale: 1.04,
               boxShadow: "0 0 72px rgba(0,255,127,0.45)",

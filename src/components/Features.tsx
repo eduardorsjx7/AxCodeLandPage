@@ -40,7 +40,7 @@ export function Features() {
     <section
       id="diferenciais"
       ref={ref}
-      className="relative border-t border-white/5 py-24"
+      className="relative border-t border-white/5 py-20 sm:py-24"
     >
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-accent-blue/[0.03] to-transparent" />
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
@@ -53,7 +53,7 @@ export function Features() {
           <p className="font-mono text-sm uppercase tracking-widest text-accent-blue">
             Diferenciais
           </p>
-          <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+          <h2 className="mt-3 text-2xl font-semibold tracking-tight text-white sm:text-4xl">
             Por que líderes escolhem a AxCode
           </h2>
         </motion.div>

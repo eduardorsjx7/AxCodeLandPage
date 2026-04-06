@@ -54,7 +54,7 @@ export function Testimonials() {
     <section
       id="depoimentos"
       ref={ref}
-      className="relative border-t border-white/5 bg-surface/30 py-24"
+      className="relative border-t border-white/5 bg-surface/30 py-20 sm:py-24"
     >
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_70%_30%,rgba(0,255,127,0.05),transparent_50%)]" />
       <div className="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -67,7 +67,7 @@ export function Testimonials() {
           <p className="font-mono text-sm uppercase tracking-widest text-accent-green">
             Depoimentos
           </p>
-          <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+          <h2 className="mt-3 text-2xl font-semibold tracking-tight text-white sm:text-4xl">
             Quem já confia na gente
           </h2>
         </motion.div>

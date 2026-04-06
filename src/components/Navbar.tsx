@@ -49,7 +49,7 @@ export function Navbar() {
           <BrandLogo priority />
         </a>
 
-        <ul className="hidden items-center gap-8 md:flex">
+        <ul className="hidden items-center gap-5 lg:flex xl:gap-6">
           {links.map((l) => (
             <li key={l.href}>
               <a
@@ -62,7 +62,7 @@ export function Navbar() {
           ))}
         </ul>
 
-        <div className="hidden md:block">
+        <div className="hidden xl:block">
           <motion.a
             href="#contato"
             className="inline-flex rounded-full bg-gradient-to-r from-accent-green to-emerald-400 px-5 py-2.5 text-sm font-semibold text-black shadow-glow transition hover:shadow-[0_0_48px_rgba(0,255,127,0.35)]"
@@ -75,7 +75,7 @@ export function Navbar() {
 
         <button
           type="button"
-          className="flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-white md:hidden"
+          className="flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-white lg:hidden"
           onClick={() => setOpen((v) => !v)}
           aria-expanded={open}
           aria-label={open ? "Fechar menu" : "Abrir menu"}
@@ -91,7 +91,7 @@ export function Navbar() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.28 }}
-            className="border-t border-white/5 bg-background/95 backdrop-blur-xl md:hidden"
+            className="border-t border-white/5 bg-background/95 backdrop-blur-xl lg:hidden"
           >
             <div className="border-b border-white/5 px-4 py-4">
               <a

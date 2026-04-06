@@ -3,6 +3,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Rocket, ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 import type { OurSystem } from "@/data/ourSystems";
 import { ourSystems } from "@/data/ourSystems";
 
@@ -24,11 +25,13 @@ function SystemCard({ item, index }: { item: OurSystem; index: number }) {
             className="pointer-events-none absolute h-12 w-40 rounded-full bg-accent-green/30 blur-2xl"
             aria-hidden
           />
-          <img
+          <Image
             src={item.logoSrc}
             alt={`Logo ${item.name}`}
+            width={320}
+            height={128}
             className="relative z-[1] h-16 w-auto object-contain"
-            loading="lazy"
+            sizes="(max-width: 640px) 180px, 220px"
           />
         </div>
       ) : (
@@ -95,7 +98,7 @@ export function OurSystems() {
     <section
       id="nossos-sistemas"
       ref={ref}
-      className="relative border-t border-white/5 bg-[#080808] py-24"
+      className="relative border-t border-white/5 bg-[#080808] py-20 sm:py-24"
     >
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_60%_40%_at_20%_40%,rgba(0,123,255,0.07),transparent)]" />
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
@@ -108,7 +111,7 @@ export function OurSystems() {
           <p className="font-mono text-sm uppercase tracking-widest text-accent-green">
             Nossos sistemas
           </p>
-          <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+          <h2 className="mt-3 text-2xl font-semibold tracking-tight text-white sm:text-4xl">
             Produtos que construímos e operamos
           </h2>
           <p className="mt-4 text-zinc-400">
@@ -117,16 +120,13 @@ export function OurSystems() {
           </p>
         </motion.div>
 
-        <div className="mt-16 flex flex-wrap justify-center gap-8 lg:gap-10">
+        <div className="mt-16 grid gap-8 sm:grid-cols-2 xl:grid-cols-3">
           {ourSystems.map((item, i) => (
-            <div
-              key={item.id}
-              className="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.75rem)]"
-            >
+            <div key={item.id}>
               <SystemCard item={item} index={i} />
             </div>
           ))}
-          <div className="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.75rem)]">
+          <div>
             <NewSystemsCard index={ourSystems.length} />
           </div>
         </div>
