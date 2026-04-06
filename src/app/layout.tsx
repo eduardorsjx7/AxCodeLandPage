@@ -65,8 +65,13 @@ export const metadata: Metadata = {
   },
   robots: { index: true, follow: true },
   icons: {
-    icon: [{ url: "/images/axcode-mark.webp", type: "image/webp" }],
-    apple: "/images/axcode-mark.webp",
+    icon: [
+      { url: "/images/axcode-logo-square.png", type: "image/png", sizes: "16x16" },
+      { url: "/images/axcode-logo-square.png", type: "image/png", sizes: "32x32" },
+    ],
+    apple: [
+      { url: "/images/axcode-logo-square.png", sizes: "180x180", type: "image/png" },
+    ],
   },
 };
 
